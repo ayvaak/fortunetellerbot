@@ -7,7 +7,7 @@ const prefix = "!";
 client.on("message", function(message) {
     //does not respond to bots
     if (message.author.bot) return; 
-    //does not respond to commands not preceded with '#'
+    //does not respond to commands not preceded with '!'
     if (!message.content.startsWith(prefix)) return; //not a command
 
     //set up formatting
